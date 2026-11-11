@@ -1,0 +1,6 @@
+{
+  "n_benign_mv25": 15,
+  "n_fp": 4,
+  "fpr": 0.26666666666666666,
+  "interpretation": "FPR measures OS-generational fragility: the fraction of Win10 Benign samples that a Win7-trained model incorrectly classifies as Malware."
+}

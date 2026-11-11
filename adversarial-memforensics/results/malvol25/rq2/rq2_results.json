@@ -1,0 +1,58 @@
+{
+  "levels": [
+    {
+      "truncation_pct": 1.0,
+      "clean_error_rate": 0.2,
+      "adv_evasion_rate": 0.2,
+      "n_malicious": 15,
+      "n_clean_errors": 3,
+      "n_adv_evasions": 3,
+      "interaction_delta": 0.0
+    },
+    {
+      "truncation_pct": 0.75,
+      "clean_error_rate": 0.0,
+      "adv_evasion_rate": 0.0,
+      "n_malicious": 15,
+      "n_clean_errors": 0,
+      "n_adv_evasions": 0,
+      "interaction_delta": 0.0
+    },
+    {
+      "truncation_pct": 0.5,
+      "clean_error_rate": 0.0,
+      "adv_evasion_rate": 0.0,
+      "n_malicious": 15,
+      "n_clean_errors": 0,
+      "n_adv_evasions": 0,
+      "interaction_delta": 0.0
+    },
+    {
+      "truncation_pct": 0.25,
+      "clean_error_rate": 0.6,
+      "adv_evasion_rate": 0.6666666666666666,
+      "n_malicious": 15,
+      "n_clean_errors": 9,
+      "n_adv_evasions": 10,
+      "interaction_delta": 0.06666666666666665
+    },
+    {
+      "truncation_pct": 0.1,
+      "clean_error_rate": 1.0,
+      "adv_evasion_rate": 1.0,
+      "n_malicious": 15,
+      "n_clean_errors": 15,
+      "n_adv_evasions": 15,
+      "interaction_delta": 0.0
+    }
+  ],
+  "interaction_deltas": [
+    0.0,
+    0.0,
+    0.0,
+    0.06666666666666665,
+    0.0
+  ],
+  "max_interaction_delta": 0.06666666666666665,
+  "h2_supported": "True"
+}

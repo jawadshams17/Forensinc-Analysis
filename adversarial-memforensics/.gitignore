@@ -1,0 +1,42 @@
+# Data (too large for git)
+data/raw_dumps/
+data/features/*.csv
+data/predictions/*.csv
+data/shap_values/*.npy
+
+# Models
+models/*.pkl
+models/*.joblib
+
+# Logs
+logs/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Cloud credentials (NEVER commit)
+*.pem
+*.key
+credentials/
+.aws/
+.gcp/
+
+# Terraform state
+*.tfstate
+*.tfstate.backup
+.terraform/

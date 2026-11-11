@@ -1,0 +1,9 @@
+*.mem
+*.vmem
+*.raw
+*.dmp
+*.zip
+adversarial-memforensics/data/
+__pycache__/
+venv/
+.env

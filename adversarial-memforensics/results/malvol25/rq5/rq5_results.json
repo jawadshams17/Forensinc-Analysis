@@ -1,0 +1,29 @@
+{
+  "source": "ensemble",
+  "targets": [
+    {
+      "architecture": "ensemble",
+      "is_source": true,
+      "clean_error_rate": 0.2,
+      "adv_evasion_rate": 0.2,
+      "n_clean_errors": 3,
+      "n_adv_evasions": 3,
+      "avg_malicious_prob_drop": 0.09262659720406069,
+      "n_samples": 15,
+      "transfer_ratio": 1.0
+    },
+    {
+      "architecture": "rf_only",
+      "is_source": false,
+      "clean_error_rate": 0.2,
+      "adv_evasion_rate": 0.13333333333333333,
+      "n_clean_errors": 3,
+      "n_adv_evasions": 2,
+      "avg_malicious_prob_drop": 0.11282923280423285,
+      "n_samples": 15,
+      "transfer_ratio": 0.6666666666666666
+    }
+  ],
+  "avg_transfer_ratio": 0.6666666666666666,
+  "h5_supported": true
+}

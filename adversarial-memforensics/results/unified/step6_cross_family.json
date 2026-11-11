@@ -1,0 +1,11 @@
+{
+  "model": "XGBoost (McNemar-validated, ensemble dropped)",
+  "source_size": 33927,
+  "target_size": 24669,
+  "acc_indist": 1.0,
+  "f1_indist": 1.0,
+  "auc_indist": 1.0,
+  "acc_oos": 0.9974,
+  "f1_oos": 0.9974,
+  "auc_oos": 0.9996
+}

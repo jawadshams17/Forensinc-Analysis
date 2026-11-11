@@ -1,0 +1,95 @@
+{
+  "per_step_accuracy": [
+    {
+      "completeness": 0.05,
+      "accuracy": 0.5
+    },
+    {
+      "completeness": 0.1,
+      "accuracy": 0.5
+    },
+    {
+      "completeness": 0.15,
+      "accuracy": 0.5
+    },
+    {
+      "completeness": 0.2,
+      "accuracy": 0.5
+    },
+    {
+      "completeness": 0.25,
+      "accuracy": 0.5333333333333333
+    },
+    {
+      "completeness": 0.3,
+      "accuracy": 0.7666666666666667
+    },
+    {
+      "completeness": 0.35,
+      "accuracy": 0.7333333333333333
+    },
+    {
+      "completeness": 0.4,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "completeness": 0.45,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "completeness": 0.5,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "completeness": 0.55,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "completeness": 0.6,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "completeness": 0.65,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "completeness": 0.7,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "completeness": 0.75,
+      "accuracy": 0.8333333333333334
+    },
+    {
+      "completeness": 0.8,
+      "accuracy": 0.9
+    },
+    {
+      "completeness": 0.85,
+      "accuracy": 0.9
+    },
+    {
+      "completeness": 0.9,
+      "accuracy": 0.9
+    },
+    {
+      "completeness": 0.95,
+      "accuracy": 0.9
+    },
+    {
+      "completeness": 1.0,
+      "accuracy": 0.9
+    }
+  ],
+  "first_correct_detection": {
+    "mean_pct": 0.1689655172413793,
+    "median_pct": 0.05,
+    "std_pct": 0.12758620689655176,
+    "n_never_correct": 1
+  },
+  "consistent_detection": {
+    "mean_pct": 0.2777777777777778,
+    "median_pct": 0.25,
+    "n_never_consistent": 3
+  }
+}

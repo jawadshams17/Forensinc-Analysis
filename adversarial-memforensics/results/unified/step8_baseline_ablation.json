@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "source_dataset": "CIC-MalMem-2022",
+    "source_n": 58596,
+    "note": "Continuous Brier validation natively evaluates massive saturation accuracy. Instead of simple arbitrary absolute Brier thresholds, this validation uses relative % effect degradation and N-seed stability checks to separate true structural generalisation gains from permutation noise."
+  },
+  "seeds_evaluated": [
+    1,
+    7,
+    42,
+    99
+  ],
+  "seed_results": [
+    {
+      "seed": 1,
+      "brier_xgb": 9.185416229999741e-05,
+      "brier_ens": 6.620366454968563e-05,
+      "abs_diff": -2.565049775031178e-05,
+      "rel_degradation_pct": -27.925242697806958,
+      "xgb_wins": false
+    },
+    {
+      "seed": 7,
+      "brier_xgb": 7.54509130674357e-05,
+      "brier_ens": 8.690190086715283e-05,
+      "abs_diff": 1.1450987799717138e-05,
+      "rel_degradation_pct": 15.176738536593454,
+      "xgb_wins": true
+    },
+    {
+      "seed": 42,
+      "brier_xgb": 7.091442399781303e-05,
+      "brier_ens": 8.81436183430414e-05,
+      "abs_diff": 1.7229194345228367e-05,
+      "rel_degradation_pct": 24.295754479737024,
+      "xgb_wins": true
+    },
+    {
+      "seed": 99,
+      "brier_xgb": 0.00011843557062462588,
+      "brier_ens": 0.00010066190989128988,
+      "abs_diff": -1.7773660733336e-05,
+      "rel_degradation_pct": -15.00702925615861,
+      "xgb_wins": false
+    }
+  ],
+  "summary": {
+    "total_xgb_wins": 2,
+    "total_seeds": 4,
+    "mean_relative_degradation_pct": -0.8649447344087724
+  },
+  "conclusion": "DECISION: Across 4 independent CV seeds, no consistent winner emerged (2/4 favoring each model, mean relative difference -0.86%), consistent with fold-level noise rather than a structural capability difference. Drop the ensemble.
+}

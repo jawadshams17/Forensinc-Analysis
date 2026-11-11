@@ -1,0 +1,65 @@
+# GCP Preemptible / Spot VM Configuration for Memory Acquisition Testbed
+
+provider:
+  project_id: "amf-research"       # To be set by user
+  region: "us-central1"
+  zone: "us-central1-a"
+
+preemptible_vms:
+  machine_types:
+    - "e2-medium"      # 2 vCPU, 4 GB RAM
+    - "e2-standard-4"  # 4 vCPU, 16 GB RAM
+    - "n2-standard-2"  # 2 vCPU, 8 GB RAM
+  image_family: "windows-2019"
+  image_project: "windows-cloud"
+  preemptible: true
+  provisioning_model: "SPOT"       # Use new Spot VM API when available
+
+  # Preemption notice handling
+  preemption_notice:
+    nominal_window_seconds: 30      # ~30 seconds per GCP documentation
+    polling_interval_seconds: 1     # Must be aggressive for 30s window
+    metadata_endpoint: "http://metadata.google.internal/computeMetadata/v1/instance/preempted"
+    maintenance_event_endpoint: "http://metadata.google.internal/computeMetadata/v1/instance/maintenance-event"
+
+# Storage
+gcs:
+  bucket_name: "amf-memory-dumps-gcp"
+  location: "US"
+  storage_class: "STANDARD"
+  versioning: true
+  lifecycle:
+    age_to_nearline_days: 90
+    age_to_delete_days: 365
+
+# LiME Acquisition (same as AWS)
+lime:
+  kernel_module_path: "/opt/lime/lime.ko"
+  output_format: "lime"
+  output_dir: "/tmp/acquisition"
+  compress: false
+
+# Billing
+billing:
+  alerts:
+    - threshold_usd: 100
+      action: "email"
+    - threshold_usd: 250
+      action: "email+pause"
+    - threshold_usd: 500
+      action: "email+terminate"
+  monthly_budget_cap_usd: 500
+
+# Network
+networking:
+  network: "amf-research-vpc"
+  subnet: "amf-research-subnet"
+  firewall_rules:
+    - name: "allow-ssh"
+      protocol: "tcp"
+      port: 22
+      source_ranges: ["researcher_ip/32"]
+    - name: "allow-winrm"
+      protocol: "tcp"
+      port: 5985
+      source_ranges: ["researcher_ip/32"]

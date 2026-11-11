@@ -1,0 +1,66 @@
+# AWS Spot Instance Configuration for Memory Acquisition Testbed
+
+provider:
+  region: "us-east-1"
+  availability_zones: ["us-east-1a", "us-east-1b"]
+
+spot_instances:
+  # Primary acquisition target
+  instance_types:
+    - "t3.medium"      # 2 vCPU, 4 GB RAM — lightweight test
+    - "m5.large"       # 2 vCPU, 8 GB RAM — realistic memory size
+    - "m5.xlarge"      # 4 vCPU, 16 GB RAM — large memory captures
+  ami: "ami-windows-server-2019"   # To be resolved per region
+  platform: "Windows"
+  max_spot_price: "0.05"           # USD per hour cap
+  interruption_behavior: "terminate"
+
+  # Interruption notice handling
+  interruption_notice:
+    nominal_window_seconds: 120     # ~2 minutes per AWS documentation
+    polling_interval_seconds: 5     # IMDSv2 metadata polling
+    metadata_endpoint: "http://169.254.169.254/latest/meta-data/spot/instance-action"
+
+# Storage
+s3:
+  bucket_name: "amf-memory-dumps"
+  region: "us-east-1"
+  encryption: "AES256"
+  versioning: true
+  lifecycle:
+    transition_to_glacier_days: 90
+    expiration_days: 365
+
+# LiME Acquisition
+lime:
+  kernel_module_path: "/opt/lime/lime.ko"
+  output_format: "lime"            # raw LiME format
+  output_dir: "/tmp/acquisition"
+  compress: false                  # compression adds latency during truncation
+
+# Billing Alerts
+billing:
+  alerts:
+    - threshold_usd: 100
+      action: "email"
+    - threshold_usd: 250
+      action: "email+pause_experiments"
+    - threshold_usd: 500
+      action: "email+terminate_all"
+  monthly_budget_cap_usd: 500
+
+# Network
+networking:
+  vpc_cidr: "10.0.0.0/16"
+  public_subnet: "10.0.1.0/24"
+  security_group_rules:
+    ingress:
+      - protocol: "tcp"
+        port: 22
+        source: "researcher_ip/32"   # SSH — restricted
+      - protocol: "tcp"
+        port: 5985
+        source: "researcher_ip/32"   # WinRM — restricted
+    egress:
+      - protocol: "all"
+        destination: "0.0.0.0/0"     # Allow outbound for C2 simulation

@@ -1,0 +1,194 @@
+[
+  {
+    "label": "D0: No Adaptation (Baseline)",
+    "accuracy": 0.5,
+    "accuracy_ci": [
+      0.3333,
+      0.6667
+    ],
+    "f1_macro": 0.4712,
+    "f1_ci": [
+      0.2992,
+      0.6307
+    ],
+    "roc_auc": 0.5022,
+    "confusion_matrix": [
+      [
+        11,
+        4
+      ],
+      [
+        11,
+        4
+      ]
+    ]
+  },
+  {
+    "label": "D3: CORAL Alignment",
+    "accuracy": 0.6,
+    "accuracy_ci": [
+      0.4,
+      0.7667
+    ],
+    "f1_macro": 0.5982,
+    "f1_ci": [
+      0.4,
+      0.7643
+    ],
+    "roc_auc": 0.5511,
+    "confusion_matrix": [
+      [
+        10,
+        5
+      ],
+      [
+        7,
+        8
+      ]
+    ]
+  },
+  {
+    "label": "U1: Rank Transform (Quantile)",
+    "accuracy": 0.4333,
+    "accuracy_ci": [
+      0.2667,
+      0.6333
+    ],
+    "f1_macro": 0.4327,
+    "f1_ci": [
+      0.2534,
+      0.6122
+    ],
+    "roc_auc": 0.4711,
+    "confusion_matrix": [
+      [
+        6,
+        9
+      ],
+      [
+        8,
+        7
+      ]
+    ]
+  },
+  {
+    "label": "U5: Delta Features + Z-Score",
+    "accuracy": 0.5333,
+    "accuracy_ci": [
+      0.3667,
+      0.7
+    ],
+    "f1_macro": 0.5139,
+    "f1_ci": [
+      0.3302,
+      0.6827
+    ],
+    "roc_auc": 0.4311,
+    "confusion_matrix": [
+      [
+        11,
+        4
+      ],
+      [
+        10,
+        5
+      ]
+    ]
+  },
+  {
+    "label": "U3: TCA (MMD Minimisation)",
+    "accuracy": 0.5333,
+    "accuracy_ci": [
+      0.3667,
+      0.7
+    ],
+    "f1_macro": 0.5312,
+    "f1_ci": [
+      0.3486,
+      0.6997
+    ],
+    "roc_auc": 0.4822,
+    "confusion_matrix": [
+      [
+        9,
+        6
+      ],
+      [
+        8,
+        7
+      ]
+    ]
+  },
+  {
+    "label": "U2: 5-Shot Fine-Tuning",
+    "accuracy": 0.48,
+    "accuracy_ci": [
+      0.28,
+      0.68
+    ],
+    "f1_macro": 0.3243,
+    "f1_ci": [
+      0.2188,
+      0.4048
+    ],
+    "roc_auc": 0.4231,
+    "confusion_matrix": [
+      [
+        12,
+        0
+      ],
+      [
+        13,
+        0
+      ]
+    ]
+  },
+  {
+    "label": "U4: Stacked Meta-Learner (5-shot)",
+    "accuracy": 0.48,
+    "accuracy_ci": [
+      0.28,
+      0.68
+    ],
+    "f1_macro": 0.3243,
+    "f1_ci": [
+      0.2188,
+      0.4048
+    ],
+    "roc_auc": 0.4615,
+    "confusion_matrix": [
+      [
+        12,
+        0
+      ],
+      [
+        13,
+        0
+      ]
+    ]
+  },
+  {
+    "label": "U6: Combined (Delta+Rank+CORAL+5-shot)",
+    "accuracy": 0.48,
+    "accuracy_ci": [
+      0.28,
+      0.68
+    ],
+    "f1_macro": 0.3243,
+    "f1_ci": [
+      0.2188,
+      0.4048
+    ],
+    "roc_auc": 0.4872,
+    "confusion_matrix": [
+      [
+        12,
+        0
+      ],
+      [
+        13,
+        0
+      ]
+    ]
+  }
+]

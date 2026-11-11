@@ -1,0 +1,156 @@
+{
+    "schema_version": "1.0",
+    "project": "Adversarial Memory Forensics",
+    "description": "Registry of malware samples used in the experiment. Each entry contains the sample metadata, category, VolMemLyzer feature group, and acquisition status.",
+    "families": {
+        "Ransomware": [
+            {
+                "family": "wannacry_variant",
+                "sample_id": "RW-001",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Ransomware",
+                "expected_behaviors": [
+                    "file_encryption",
+                    "c2_contact",
+                    "persistence_mechanism"
+                ],
+                "acquisition_status": "pending",
+                "notes": "WannaCry memory image from CIC-MalMem-2022 dataset"
+            },
+            {
+                "family": "cerber_loader",
+                "sample_id": "RW-002",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Ransomware",
+                "expected_behaviors": [
+                    "file_encryption",
+                    "c2_contact",
+                    "shadow_copy_deletion"
+                ],
+                "acquisition_status": "pending",
+                "notes": "Cerber variant with loader stage"
+            },
+            {
+                "family": "lockbit_mem",
+                "sample_id": "RW-003",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Ransomware",
+                "expected_behaviors": [
+                    "file_encryption",
+                    "persistence_mechanism",
+                    "lateral_movement"
+                ],
+                "acquisition_status": "pending",
+                "notes": "LockBit memory-resident variant"
+            }
+        ],
+        "Spyware": [
+            {
+                "family": "agent_tesla",
+                "sample_id": "SP-001",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Spyware",
+                "expected_behaviors": [
+                    "keylogging",
+                    "data_exfiltration",
+                    "c2_contact"
+                ],
+                "acquisition_status": "pending",
+                "notes": "Agent Tesla keylogger variant"
+            },
+            {
+                "family": "formbook",
+                "sample_id": "SP-002",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Spyware",
+                "expected_behaviors": [
+                    "clipboard_monitoring",
+                    "data_exfiltration",
+                    "screen_capture"
+                ],
+                "acquisition_status": "pending",
+                "notes": "FormBook info-stealer"
+            },
+            {
+                "family": "snake_keylogger",
+                "sample_id": "SP-003",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Spyware",
+                "expected_behaviors": [
+                    "keylogging",
+                    "data_exfiltration",
+                    "network_activity"
+                ],
+                "acquisition_status": "pending",
+                "notes": "Snake Keylogger (.NET-based)"
+            }
+        ],
+        "Trojan": [
+            {
+                "family": "emotet_stage",
+                "sample_id": "TR-001",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Trojan",
+                "expected_behaviors": [
+                    "c2_contact",
+                    "persistence_mechanism",
+                    "process_injection"
+                ],
+                "acquisition_status": "pending",
+                "notes": "Emotet stage 1 dropper"
+            },
+            {
+                "family": "trickbot_mem",
+                "sample_id": "TR-002",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Trojan",
+                "expected_behaviors": [
+                    "c2_contact",
+                    "credential_theft",
+                    "lateral_movement"
+                ],
+                "acquisition_status": "pending",
+                "notes": "TrickBot with web injection module"
+            },
+            {
+                "family": "qakbot_injector",
+                "sample_id": "TR-003",
+                "sha256": "<TO_BE_POPULATED>",
+                "source": "CIC-MalMem-2022",
+                "category": "Trojan",
+                "expected_behaviors": [
+                    "c2_contact",
+                    "process_injection",
+                    "persistence_mechanism"
+                ],
+                "acquisition_status": "pending",
+                "notes": "QakBot with process hollowing"
+            }
+        ]
+    },
+    "benign_baseline": {
+        "description": "Clean Windows 10/11 baseline images for benign class",
+        "count": 0,
+        "source": "CIC-MalMem-2022",
+        "notes": "Benign samples from the dataset represent clean system state"
+    },
+    "statistics": {
+        "total_families": 9,
+        "categories": [
+            "Ransomware",
+            "Spyware",
+            "Trojan"
+        ],
+        "families_per_category": 3,
+        "primary_dataset": "CIC-MalMem-2022",
+        "total_samples_expected": "~58,596 (from CIC-MalMem-2022)"
+    }
+}

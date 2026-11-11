@@ -1,0 +1,25 @@
+{
+  "n_samples": 30,
+  "accuracy": 0.5,
+  "accuracy_ci_95": [
+    0.3333,
+    0.6667
+  ],
+  "f1_macro": 0.4712,
+  "f1_macro_ci_95": [
+    0.2992,
+    0.6307
+  ],
+  "roc_auc": 0.54,
+  "confusion_matrix": [
+    [
+      11,
+      4
+    ],
+    [
+      11,
+      4
+    ]
+  ],
+  "note": "Model trained on MalwareMemoryDump (58,596 samples). Evaluated zero-shot on MalVol-25 (30 samples). Performance gap quantifies cross-dataset generalisation challenge."
+}

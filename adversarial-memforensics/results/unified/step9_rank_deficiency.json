@@ -1,0 +1,270 @@
+{
+  "top3_vanishing": [
+    {
+      "feature": "svcscan_nservices",
+      "shap_cic": 4.379295825958252,
+      "shap_mv25": 4.037472248077393,
+      "drift": 0.3418235778808594
+    },
+    {
+      "feature": "handles_avg_handles_per_proc",
+      "shap_cic": 2.4079368114471436,
+      "shap_mv25": 2.083484411239624,
+      "drift": 0.32445240020751953
+    },
+    {
+      "feature": "malfind_commitCharge",
+      "shap_cic": 0.46826085448265076,
+      "shap_mv25": 0.28603410720825195,
+      "drift": 0.1822267472743988
+    }
+  ],
+  "full_table": [
+    {
+      "feature": "svcscan_nservices",
+      "shap_cic": 4.379295825958252,
+      "shap_mv25": 4.037472248077393,
+      "drift": 0.3418235778808594
+    },
+    {
+      "feature": "handles_avg_handles_per_proc",
+      "shap_cic": 2.4079368114471436,
+      "shap_mv25": 2.083484411239624,
+      "drift": 0.32445240020751953
+    },
+    {
+      "feature": "svcscan_process_services",
+      "shap_cic": 1.2352935075759888,
+      "shap_mv25": 2.21285343170166,
+      "drift": -0.9775599241256714
+    },
+    {
+      "feature": "handles_nevent",
+      "shap_cic": 0.6711469292640686,
+      "shap_mv25": 0.6055527925491333,
+      "drift": 0.0655941367149353
+    },
+    {
+      "feature": "pslist_avg_threads",
+      "shap_cic": 0.6444286108016968,
+      "shap_mv25": 0.7120105028152466,
+      "drift": -0.0675818920135498
+    },
+    {
+      "feature": "handles_nthread",
+      "shap_cic": 0.5908733606338501,
+      "shap_mv25": 0.6787101626396179,
+      "drift": -0.08783680200576782
+    },
+    {
+      "feature": "malfind_commitCharge",
+      "shap_cic": 0.46826085448265076,
+      "shap_mv25": 0.28603410720825195,
+      "drift": 0.1822267472743988
+    },
+    {
+      "feature": "handles_nsemaphore",
+      "shap_cic": 0.38728025555610657,
+      "shap_mv25": 0.3231183588504791,
+      "drift": 0.06416189670562744
+    },
+    {
+      "feature": "malfind_uniqueInjections",
+      "shap_cic": 0.3517315089702606,
+      "shap_mv25": 0.518328070640564,
+      "drift": -0.16659656167030334
+    },
+    {
+      "feature": "handles_ndirectory",
+      "shap_cic": 0.3351941704750061,
+      "shap_mv25": 0.31194302439689636,
+      "drift": 0.02325114607810974
+    },
+    {
+      "feature": "ldrmodules_not_in_init_avg",
+      "shap_cic": 0.2207452952861786,
+      "shap_mv25": 0.13791565597057343,
+      "drift": 0.08282963931560516
+    },
+    {
+      "feature": "pslist_nppid",
+      "shap_cic": 0.19163011014461517,
+      "shap_mv25": 0.25080445408821106,
+      "drift": -0.059174343943595886
+    },
+    {
+      "feature": "handles_ntimer",
+      "shap_cic": 0.18843695521354675,
+      "shap_mv25": 0.1905461996793747,
+      "drift": -0.002109244465827942
+    },
+    {
+      "feature": "ldrmodules_not_in_load_avg",
+      "shap_cic": 0.185169517993927,
+      "shap_mv25": 0.39641889929771423,
+      "drift": -0.21124938130378723
+    },
+    {
+      "feature": "handles_nmutant",
+      "shap_cic": 0.17866630852222443,
+      "shap_mv25": 0.10708903521299362,
+      "drift": 0.0715772733092308
+    },
+    {
+      "feature": "callbacks_ncallbacks",
+      "shap_cic": 0.17784175276756287,
+      "shap_mv25": 0.1215118020772934,
+      "drift": 0.05632995069026947
+    },
+    {
+      "feature": "handles_nkey",
+      "shap_cic": 0.1767125278711319,
+      "shap_mv25": 0.1254548877477646,
+      "drift": 0.05125764012336731
+    },
+    {
+      "feature": "ldrmodules_not_in_load",
+      "shap_cic": 0.17616583406925201,
+      "shap_mv25": 0.10991763323545456,
+      "drift": 0.06624820083379745
+    },
+    {
+      "feature": "svcscan_nactive",
+      "shap_cic": 0.11104072630405426,
+      "shap_mv25": 0.12788036465644836,
+      "drift": -0.016839638352394104
+    },
+    {
+      "feature": "dlllist_ndlls",
+      "shap_cic": 0.1015072911977768,
+      "shap_mv25": 0.09181550145149231,
+      "drift": 0.009691789746284485
+    },
+    {
+      "feature": "malfind_ninjections",
+      "shap_cic": 0.05368242412805557,
+      "shap_mv25": 0.08066479116678238,
+      "drift": -0.026982367038726807
+    },
+    {
+      "feature": "handles_nhandles",
+      "shap_cic": 0.04536028578877449,
+      "shap_mv25": 0.04925822094082832,
+      "drift": -0.003897935152053833
+    },
+    {
+      "feature": "pslist_nproc",
+      "shap_cic": 0.03735516965389252,
+      "shap_mv25": 0.033514633774757385,
+      "drift": 0.003840535879135132
+    },
+    {
+      "feature": "handles_nfile",
+      "shap_cic": 0.02637883834540844,
+      "shap_mv25": 0.02598588354885578,
+      "drift": 0.0003929547965526581
+    },
+    {
+      "feature": "malfind_protection",
+      "shap_cic": 0.018656883388757706,
+      "shap_mv25": 0.014702870510518551,
+      "drift": 0.003954012878239155
+    },
+    {
+      "feature": "pslist_avg_handlers",
+      "shap_cic": 0.018485533073544502,
+      "shap_mv25": 0.014100729487836361,
+      "drift": 0.004384803585708141
+    },
+    {
+      "feature": "ldrmodules_not_in_init",
+      "shap_cic": 0.017612479627132416,
+      "shap_mv25": 0.014333139173686504,
+      "drift": 0.0032793404534459114
+    },
+    {
+      "feature": "handles_ndesktop",
+      "shap_cic": 0.013303034007549286,
+      "shap_mv25": 0.004847090225666761,
+      "drift": 0.008455943316221237
+    },
+    {
+      "feature": "dlllist_avg_dlls_per_proc",
+      "shap_cic": 2.339065213163849e-05,
+      "shap_mv25": 1.7499301975476556e-05,
+      "drift": 5.891350156161934e-06
+    },
+    {
+      "feature": "callbacks_ngeneric",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "callbacks_nanonymous",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "handles_nsection",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "handles_nport",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "ldrmodules_not_in_mem_avg",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "ldrmodules_not_in_mem",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "modules_nmodules",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "pslist_nprocs64bit",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "svcscan_kernel_drivers",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "svcscan_interactive_process_services",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "svcscan_fs_drivers",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    },
+    {
+      "feature": "svcscan_shared_process_services",
+      "shap_cic": 0.0,
+      "shap_mv25": 0.0,
+      "drift": 0.0
+    }
+  ]
+}

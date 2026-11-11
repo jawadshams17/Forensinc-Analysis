@@ -1,0 +1,3 @@
+architecture,is_source,clean_error_rate,adv_evasion_rate,n_clean_errors,n_adv_evasions,avg_malicious_prob_drop,n_samples,transfer_ratio
+ensemble,True,0.2,0.2,3,3,0.09262659720406069,15,1.0
+rf_only,False,0.2,0.13333333333333333,3,2,0.11282923280423285,15,0.6666666666666666

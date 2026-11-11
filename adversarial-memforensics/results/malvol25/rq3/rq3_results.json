@@ -1,0 +1,133 @@
+{
+  "comparison_table": [
+    {
+      "condition": "trunc_clean_75pct",
+      "vs_baseline": "clean_complete",
+      "spearman_rho": 0.9899521531100479,
+      "p_value": 1.4543962189330381e-47,
+      "significant": true,
+      "n_fragile_features": 1
+    },
+    {
+      "condition": "trunc_clean_50pct",
+      "vs_baseline": "clean_complete",
+      "spearman_rho": 0.9773069036226931,
+      "p_value": 4.4306739068499794e-38,
+      "significant": true,
+      "n_fragile_features": 2
+    },
+    {
+      "condition": "trunc_clean_25pct",
+      "vs_baseline": "clean_complete",
+      "spearman_rho": 0.9559808612440193,
+      "p_value": 1.984822156337966e-30,
+      "significant": true,
+      "n_fragile_features": 4
+    },
+    {
+      "condition": "trunc_clean_10pct",
+      "vs_baseline": "clean_complete",
+      "spearman_rho": 0.945181134654819,
+      "p_value": 6.461436798803466e-28,
+      "significant": true,
+      "n_fragile_features": 6
+    },
+    {
+      "condition": "trunc_clean_75pct vs trunc_clean_50pct",
+      "vs_baseline": "pairwise",
+      "spearman_rho": 0.9857826384142174,
+      "p_value": 1.6217946651286256e-43,
+      "significant": true,
+      "n_fragile_features": -1
+    },
+    {
+      "condition": "trunc_clean_75pct vs trunc_clean_25pct",
+      "vs_baseline": "pairwise",
+      "spearman_rho": 0.9619275461380725,
+      "p_value": 4.2550036017725583e-32,
+      "significant": true,
+      "n_fragile_features": -1
+    },
+    {
+      "condition": "trunc_clean_75pct vs trunc_clean_10pct",
+      "vs_baseline": "pairwise",
+      "spearman_rho": 0.955434039644566,
+      "p_value": 2.7507334214058933e-30,
+      "significant": true,
+      "n_fragile_features": -1
+    },
+    {
+      "condition": "trunc_clean_50pct vs trunc_clean_25pct",
+      "vs_baseline": "pairwise",
+      "spearman_rho": 0.9742993848257007,
+      "p_value": 1.2281542946603188e-36,
+      "significant": true,
+      "n_fragile_features": -1
+    },
+    {
+      "condition": "trunc_clean_50pct vs trunc_clean_10pct",
+      "vs_baseline": "pairwise",
+      "spearman_rho": 0.9619958988380042,
+      "p_value": 4.057026820632788e-32,
+      "significant": true,
+      "n_fragile_features": -1
+    },
+    {
+      "condition": "trunc_clean_25pct vs trunc_clean_10pct",
+      "vs_baseline": "pairwise",
+      "spearman_rho": 0.9904306220095694,
+      "p_value": 3.9191195835825535e-48,
+      "significant": true,
+      "n_fragile_features": -1
+    }
+  ],
+  "n_conditions": 5,
+  "worst_condition": "trunc_clean_10pct",
+  "worst_rho": 0.945181134654819,
+  "n_fragile_features": 6,
+  "fragile_features": [
+    {
+      "feature": "pslist.avg_threads",
+      "rank_baseline": 30,
+      "rank_stress": 14,
+      "rank_change": 16,
+      "direction": "\u2191 more important"
+    },
+    {
+      "feature": "handles.nsemaphore",
+      "rank_baseline": 20,
+      "rank_stress": 7,
+      "rank_change": 13,
+      "direction": "\u2191 more important"
+    },
+    {
+      "feature": "svcscan.nactive",
+      "rank_baseline": 19,
+      "rank_stress": 29,
+      "rank_change": 10,
+      "direction": "\u2193 less important"
+    },
+    {
+      "feature": "handles.nhandles",
+      "rank_baseline": 18,
+      "rank_stress": 28,
+      "rank_change": 10,
+      "direction": "\u2193 less important"
+    },
+    {
+      "feature": "dlllist.ndlls",
+      "rank_baseline": 31,
+      "rank_stress": 21,
+      "rank_change": 10,
+      "direction": "\u2191 more important"
+    },
+    {
+      "feature": "pslist.avg_handlers",
+      "rank_baseline": 35,
+      "rank_stress": 25,
+      "rank_change": 10,
+      "direction": "\u2191 more important"
+    }
+  ],
+  "h3_supported": false
+}

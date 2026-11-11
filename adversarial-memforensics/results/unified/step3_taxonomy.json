@@ -1,0 +1,358 @@
+{
+  "taxonomy": [
+    {
+      "feature": "callbacks_nanonymous",
+      "ks_overall": 0.0009,
+      "ks_benign": 0.0,
+      "ks_malware": 0.0017,
+      "category": "Globally Invariant"
+    },
+    {
+      "feature": "callbacks_ncallbacks",
+      "ks_overall": 0.7333,
+      "ks_benign": 0.7333,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "callbacks_ngeneric",
+      "ks_overall": 1.0,
+      "ks_benign": 1.0,
+      "ks_malware": 1.0,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "dlllist_avg_dlls_per_proc",
+      "ks_overall": 0.2988,
+      "ks_benign": 0.4158,
+      "ks_malware": 0.5715,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "dlllist_ndlls",
+      "ks_overall": 0.639,
+      "ks_benign": 0.6333,
+      "ks_malware": 0.7306,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_avg_handles_per_proc",
+      "ks_overall": 0.58,
+      "ks_benign": 0.498,
+      "ks_malware": 0.7208,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_ndesktop",
+      "ks_overall": 0.5396,
+      "ks_benign": 0.4785,
+      "ks_malware": 0.6413,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_ndirectory",
+      "ks_overall": 0.6471,
+      "ks_benign": 0.6375,
+      "ks_malware": 0.6605,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_nevent",
+      "ks_overall": 0.7074,
+      "ks_benign": 0.6914,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_nfile",
+      "ks_overall": 0.7111,
+      "ks_benign": 0.7183,
+      "ks_malware": 0.7272,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_nhandles",
+      "ks_overall": 0.6944,
+      "ks_benign": 0.7108,
+      "ks_malware": 0.7281,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_nkey",
+      "ks_overall": 0.6593,
+      "ks_benign": 0.6562,
+      "ks_malware": 0.7281,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_nmutant",
+      "ks_overall": 0.5337,
+      "ks_benign": 0.4266,
+      "ks_malware": 0.733,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_nport",
+      "ks_overall": 0.0,
+      "ks_benign": 0.0,
+      "ks_malware": 0.0,
+      "category": "Globally Invariant"
+    },
+    {
+      "feature": "handles_nsection",
+      "ks_overall": 0.7015,
+      "ks_benign": 0.6714,
+      "ks_malware": 0.7318,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_nsemaphore",
+      "ks_overall": 0.572,
+      "ks_benign": 0.5027,
+      "ks_malware": 0.7299,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_nthread",
+      "ks_overall": 0.5337,
+      "ks_benign": 0.4897,
+      "ks_malware": 0.7319,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "handles_ntimer",
+      "ks_overall": 0.5505,
+      "ks_benign": 0.5918,
+      "ks_malware": 0.6604,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "ldrmodules_not_in_init",
+      "ks_overall": 0.5115,
+      "ks_benign": 0.5578,
+      "ks_malware": 0.4755,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "ldrmodules_not_in_init_avg",
+      "ks_overall": 0.5912,
+      "ks_benign": 0.5265,
+      "ks_malware": 0.6612,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "ldrmodules_not_in_load",
+      "ks_overall": 0.5192,
+      "ks_benign": 0.5726,
+      "ks_malware": 0.5269,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "ldrmodules_not_in_load_avg",
+      "ks_overall": 0.5822,
+      "ks_benign": 0.5701,
+      "ks_malware": 0.6591,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "ldrmodules_not_in_mem",
+      "ks_overall": 0.5192,
+      "ks_benign": 0.5726,
+      "ks_malware": 0.5269,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "ldrmodules_not_in_mem_avg",
+      "ks_overall": 0.5822,
+      "ks_benign": 0.5701,
+      "ks_malware": 0.6591,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "malfind_commitCharge",
+      "ks_overall": 1.0,
+      "ks_benign": 1.0,
+      "ks_malware": 1.0,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "malfind_ninjections",
+      "ks_overall": 0.4361,
+      "ks_benign": 0.5775,
+      "ks_malware": 0.3961,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "malfind_protection",
+      "ks_overall": 0.7377,
+      "ks_benign": 0.7725,
+      "ks_malware": 0.7593,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "malfind_uniqueInjections",
+      "ks_overall": 1.0,
+      "ks_benign": 1.0,
+      "ks_malware": 1.0,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "modules_nmodules",
+      "ks_overall": 0.495,
+      "ks_benign": 0.5184,
+      "ks_malware": 0.4716,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "pslist_avg_handlers",
+      "ks_overall": 0.8,
+      "ks_benign": 0.8,
+      "ks_malware": 0.8,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "pslist_avg_threads",
+      "ks_overall": 0.3859,
+      "ks_benign": 0.5308,
+      "ks_malware": 0.3891,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "pslist_nppid",
+      "ks_overall": 0.4434,
+      "ks_benign": 0.485,
+      "ks_malware": 0.5204,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "pslist_nproc",
+      "ks_overall": 0.5946,
+      "ks_benign": 0.6205,
+      "ks_malware": 0.5881,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "pslist_nprocs64bit",
+      "ks_overall": 0.7333,
+      "ks_benign": 0.7333,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "svcscan_fs_drivers",
+      "ks_overall": 0.7333,
+      "ks_benign": 0.7333,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "svcscan_interactive_process_services",
+      "ks_overall": 0.7333,
+      "ks_benign": 0.7333,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "svcscan_kernel_drivers",
+      "ks_overall": 0.7333,
+      "ks_benign": 0.7333,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "svcscan_nactive",
+      "ks_overall": 0.7333,
+      "ks_benign": 0.7333,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "svcscan_nservices",
+      "ks_overall": 0.7333,
+      "ks_benign": 0.7333,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "svcscan_process_services",
+      "ks_overall": 0.7333,
+      "ks_benign": 0.7333,
+      "ks_malware": 0.7333,
+      "category": "Environment-Dependent"
+    },
+    {
+      "feature": "svcscan_shared_process_services",
+      "ks_overall": 1.0,
+      "ks_benign": 1.0,
+      "ks_malware": 1.0,
+      "category": "Environment-Dependent"
+    }
+  ],
+  "confound_audit": {
+    "features_used": [
+      "callbacks_ncallbacks",
+      "callbacks_ngeneric",
+      "dlllist_ndlls",
+      "handles_ndirectory",
+      "handles_nevent",
+      "handles_nfile",
+      "handles_nhandles",
+      "handles_nkey",
+      "handles_nsection",
+      "malfind_commitCharge",
+      "malfind_protection",
+      "malfind_uniqueInjections",
+      "pslist_avg_handlers",
+      "pslist_nproc",
+      "pslist_nprocs64bit",
+      "svcscan_fs_drivers",
+      "svcscan_interactive_process_services",
+      "svcscan_kernel_drivers",
+      "svcscan_nactive",
+      "svcscan_nservices",
+      "svcscan_process_services",
+      "svcscan_shared_process_services"
+    ],
+    "n_features": 22,
+    "cv_accuracy_mean": 0.9999,
+    "cv_accuracy_std": 0.0001
+  },
+  "ablation": [
+    {
+      "fraction": 0.01,
+      "n_samples": 585,
+      "acc_in_dist": 0.9971,
+      "acc_ood": 0.5
+    },
+    {
+      "fraction": 0.05,
+      "n_samples": 2929,
+      "acc_in_dist": 0.9992,
+      "acc_ood": 0.5
+    },
+    {
+      "fraction": 0.1,
+      "n_samples": 5859,
+      "acc_in_dist": 0.9996,
+      "acc_ood": 0.5
+    },
+    {
+      "fraction": 0.25,
+      "n_samples": 14649,
+      "acc_in_dist": 0.9995,
+      "acc_ood": 0.5
+    },
+    {
+      "fraction": 0.5,
+      "n_samples": 29298,
+      "acc_in_dist": 0.9998,
+      "acc_ood": 0.5
+    },
+    {
+      "fraction": 1.0,
+      "n_samples": 58596,
+      "acc_in_dist": 1.0,
+      "acc_ood": 0.5
+    }
+  ]
+}
